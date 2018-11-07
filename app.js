@@ -18,10 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, 'build')));
-=======
->>>>>>> 618329a282a8352743165b43bebcb2d0029c7947
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
